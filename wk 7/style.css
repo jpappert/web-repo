@@ -1,0 +1,49 @@
+#quotesection{
+background-color: #8783D1;
+margin: 30vh 20vw;
+padding: 8vh 10vw 10vh 10vw;
+border-radius: 8px;
+}
+
+button{
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  float: right;
+  margin-top: 1vh;
+  background-color: black;
+  color: #7A6392;
+  font-family: serif;
+  font-weight: bold;
+  background-color: white;
+
+}
+button:hover{
+  boder: #fff solid 1px;
+  color: #C59697;
+  background-color: #915051;
+}
+button:active{
+  color:  #BE898B;
+}
+h1{
+  color: #EED3D5;
+}
+#flex{
+  display:flex;
+}
+div{
+  border: 1px solid black;
+}
+.flexitem{
+  flex-grow: 1;
+}
+.flexitem2{
+  flex-grow: 2;
+}
+body{
+  background-color: #EAC5D8;
+}
+#welcome{
+  background-color: : black;
+
+}
