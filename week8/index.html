@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Midterm</title>
+
+  </head>
+  <body>
+    <section id="welcome">
+      <h1>Self Care Generator</h1>
+    </section>
+    <section id="Asset1">
+      <h1><u>Self Care is Important for the Soul.</u><br> Welcome to the Self Care Machine</h1>
+      <h2>Practicing self care is an amazing way to nourish your body, mind and spirit. <br>Use this self care machine to generate strategies for mindfulness and calming. <br> Please feel free to share your own strategies or meaningful comments! <br> Thank you for participating.</h2>
+
+    </section>
+    <section>
+      <div class="centercontent">
+
+      <button id="button">How to play!</button>
+      </div>
+    </section>
+      <section id= "quotesection">
+        <h1 id= "qtext">Click the button for some self care strategies!</h1>
+  <button id= "newquote" >Generate!</button>
+    </section>
+    <section>
+
+    </section>
+<div class="input">
+<input type="text" id="input" value=""><br/>
+    <button id="addquote">Submit</button>
+
+    </div>
+
+<script>
+document.getElementById("button").addEventListener("click", function(){alert("Click the generate key to generate a new stretegy! Please add your own strategy at the bottom! Thanks for playing!")});
+const quotes = ["Drinking water is a great way to take care of your body!","Be sure and get at least 8 hours of sleep every night!" , "Do the things that make you happy!","Have an open mind to the opportunities that present themselves!","Be sure and eat for every meal!","Practice Mindfulness!", "Be gentle with yourself!", "Trying your best means being kind to yourself in the process!"];
+let quotecount = 0;
+
+
+document.getElementById("newquote") .addEventListener("click", buttonClicked);
+
+function buttonClicked(){
+  // console.log(quotecount);
+  console.log(quotes[quotecount]);
+  document.getElementById("qtext").innerHTML = quotes[quotecount];
+if(quotecount>=quotes.length -1){
+quotecount = 0;
+}else{
+  quotecount++;
+}
+
+
+}
+document.getElementById("addquote") .addEventListener("click",addQuote);
+
+function addQuote (){
+const NewQuote = document.getElementById("input").value
+quotes.push(NewQuote)
+document.getElementById("input").value=""
+}
+</script>
+
+  </body>
+</html>
