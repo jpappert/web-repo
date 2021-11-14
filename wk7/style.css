@@ -1,6 +1,6 @@
 #quotesection{
-background-color: #8783D1;
-margin: 30vh 20vw;
+background-color: #1C4A42;
+margin: 10vh 20vw;
 padding: 8vh 10vw 10vh 10vw;
 border-radius: 8px;
 }
@@ -28,9 +28,7 @@ button:active{
 h1{
   color: #EED3D5;
 }
-#flex{
-  display:flex;
-}
+
 div{
   border: 1px solid black;
 }
@@ -41,9 +39,36 @@ div{
   flex-grow: 2;
 }
 body{
-  background-color: #EAC5D8;
+  background-color: #EFA7A7;
 }
 #welcome{
   background-color: : black;
+
+}
+#title h1{
+  font-size: 40px;
+  font-family: serif;
+  color: #BEEECE;
+  background-color: #1C4A42;
+}
+#titlediv{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  height: calc(100%-50px);
+  margin-top: 50px;
+  justify-content: space-around;
+
+}
+@media (max-width: 800px) {
+#titlediv{
+  flex-direction: column;
+}
+}
+
+#title h2{
+  color: #1C4A42;
+
 
 }
