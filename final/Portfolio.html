@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+<section id= "name">
+<h1>Jacob Pappert</h1>
+<h1>Portfolio</h1>
+</section>
+
+<section id="recent">
+  <h1>Recent work</h1>
+</section>
+
+<section>
+  <div class="artwork" id="artwork">
+
+
+  </div>
+</section>
+<section id="check">
+  <h1>Check out my VSCO for more content!</h1>
+</section>
+
+
+<section id="More Content!">
+  <a href="https://vsco.co/jacobpappert/gallery"</a>
+    <h2>VSCO</h2>
+
+</section>
+
+
+<script>
+
+const images = [
+{ source: 'art/poster.jpg', alt: 'poster' },
+{ source: 'art/art1.jpg', alt: 'Milk Informative Poster' },
+{ source: 'art/art4.jpg', alt: 'Tacticle Poster' },
+{ source: 'art/art5.jpg', alt: 'Grief' },
+{ source: 'art/art6.jpg', alt: 'Logo Concept Design' },
+{ source: 'art/art7.jpg', alt: 'Still Life' },
+{ source: 'art/art8.jpg', alt: 'Self Portrait' },
+{ source: 'art/art9.jpg', alt: 'Landscape' },
+{ source: 'art/art10.jpg', alt: 'Stickers' },
+{ source: 'art/art11.jpg', alt: 'Plate' },
+{ source: 'art/art12.jpg', alt: 'Poster' },
+{ source: 'art/art13.jpg', alt: 'Chassel' },
+{ source: 'art/art14.jpg', alt: 'Magnet Muze1' },
+{ source: 'art/art15.jpg', alt: 'Magnet Muze2' },
+{ source: 'art/art16.jpg', alt: 'Magnet Muze3' },
+{ source: 'art/art17.jpg', alt: 'Magnet Muze4' },
+{ source: 'art/art18.jpg', alt: 'Magnet Muze5' },
+
+
+// { source: }
+];
+const imageDiv = document.getElementById('artwork');
+images.forEach((imageInfo) => {
+const img = document.createElement('img');
+img.src = imageInfo.source;
+img.alt = imageInfo.alt;
+img.setAttribute("class", "artImages");
+imageDiv.appendChild(img);
+});
+</script>
+</body>

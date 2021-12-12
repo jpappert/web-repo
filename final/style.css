@@ -1,0 +1,108 @@
+#name{
+  font-size: 30px;
+  padding-left: 300px;
+  color: #B48E99;
+
+}
+
+#pictures{
+  font-size: 50px;
+  color: black;
+}
+body{
+  background-color: #F2F2F2;
+}
+
+#art1 img{
+width:10vw;
+height: auto;
+}
+
+#recent h1{
+  color: #BFD5E2;
+  font-size: 70px;
+}
+
+.mepicture{
+display: flex;
+
+}
+
+@media (max-width: 800px) {
+  .mepicture {
+      flex-direction: column;
+
+    }
+    .menu {
+        flex-direction: column;
+      }
+      .artwork {
+        flex-direction: column;
+      }
+}
+
+
+.mepicture img{
+  width: 370px;
+  height: 400px;
+}
+
+.menu{
+  display: flex;
+justify-content: space-between;
+
+
+}
+
+.artwork img{
+height: 300px;
+width: auto;
+}
+
+
+
+.artImages:hover {
+height: 600px;
+border: 12px solid #D8BCC4;
+
+}
+
+#Please{}
+
+.menu h1{
+  color: #BFD5E2;
+  font-size: 40px;
+  background-color: black;
+  border: 5px solid #B48E99;
+  border-radius: 15px;
+}
+
+#contact2 h1{
+  font-size: 60px;
+  color: #B48E99;
+}
+
+#contact2 h2{
+  font-size: 30px;
+}
+
+#contact1 h1{
+  font-size: 80px;
+  color: #577180;
+}
+
+#end h1{
+  font-size: 30px;
+  color: #B48E99;
+  padding-left: 300px;
+}
+
+#resume1 img{
+  width: 1200px;
+  height: auto;
+}
+
+#resume1 h1{
+  font-size: 80px;
+  color: #577180;
+}
